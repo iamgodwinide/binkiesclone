@@ -1,0 +1,34 @@
+.loader-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+.loader-bg img {
+    width: 20em;
+    height: 17em;
+}
+
+.loader-bg h2 {
+    font-size: 1.2em !important;
+    font-family: monospace !important;
+    font-weight: bolder;
+    color: rgb(106, 106, 106);
+}
+
+.loader-bg button {
+    font-size: 1.2em;
+    background-color: transparent;
+    color: #fff;
+    border: 2px dotted #fff;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 2em;
+}

@@ -1,0 +1,26 @@
+footer {
+    background-color: rgb(3, 2, 7);
+    padding: 1em;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1em !important;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.links i {
+    color: #fff;
+    font-size: 1.5em;
+}
