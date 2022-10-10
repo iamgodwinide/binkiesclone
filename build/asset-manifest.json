@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9550f40b.css",
-    "main.js": "/static/js/main.ce71df96.js",
+    "main.js": "/static/js/main.e8a26f41.js",
     "static/media/parallax-bg.gif": "/static/media/parallax-bg.a753668321d10848110d.gif",
     "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -26,10 +26,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.9550f40b.css.map": "/static/css/main.9550f40b.css.map",
-    "main.ce71df96.js.map": "/static/js/main.ce71df96.js.map"
+    "main.e8a26f41.js.map": "/static/js/main.e8a26f41.js.map"
   },
   "entrypoints": [
     "static/css/main.9550f40b.css",
-    "static/js/main.ce71df96.js"
+    "static/js/main.e8a26f41.js"
   ]
 }
