@@ -20,11 +20,11 @@ function App() {
 
   return (
     <div id="app" className="App">
-      {/* {
+      {
         !isOpened
         &&
         <Loader setIsOpended={setIsOpended} />
-      } */}
+      }
       {/* nav start */}
       <Navbar accounts={accounts} setAccounts={setAccounts} />
       {/* nav end */}
