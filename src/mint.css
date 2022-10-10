@@ -1,0 +1,35 @@
+dl,
+ol,
+ul {
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
+.mint-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.mint-container button {
+    margin: 0 .5em;
+}
+
+.mintwrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.mintwrap input {
+    max-width: 4em;
+}
+
+@media screen and (max-width: 1024px) {
+    .mint-container {
+        flex-direction: column;
+    }
+
+    .mint-text {
+        font-size: .8em !important;
+        margin: 0 !important;
+    }
+}
