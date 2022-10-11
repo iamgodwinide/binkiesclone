@@ -52,7 +52,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                     <button className='btn btn-primary mint' onClick={handleMint}>Mint Now</button>
                 </div>
             ) : (
-                <p className='mint-text text-dark'>Please Connect Metamask</p>
+                <p className='mint-text text-dark'>Please Connect <p>Metamask!</p></p>
             )
             }
         </div>

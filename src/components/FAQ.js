@@ -20,7 +20,7 @@ const FAQ = () => {
                 <Accordion open={open} toggle={toggle}>
                     <AccordionItem className='item'>
                         <AccordionHeader className='header' targetId="1">
-                            <h3>What is atamo ascension?</h3>
+                            <h3>What is Atamo Ascension?</h3>
                         </AccordionHeader>
                         <AccordionBody accordionId="1">
                             <p>

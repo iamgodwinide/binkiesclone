@@ -37,12 +37,7 @@ const Navbar = ({ accounts, setAccounts }) => {
                 </li>
                 <li className="hide-mobile">
                     <a href="https://twitter.com/home">
-                        <img src={Twitter} />
-                    </a>
-                </li>
-                <li className="hide-mobile">
-                    <a href="https://rinkeby.etherscan.io/address/0x0585be55b239fb477d0c3ed54b5abfbdf70b8ffd">
-                        <img src={Etherscan} />
+                        <i className="fab fa-2x fa-twitter" />
                     </a>
                 </li>
             </ul>

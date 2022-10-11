@@ -16,7 +16,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 55%;
+    width: 30%;
 }
 
 nav ul a {
