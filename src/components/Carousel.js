@@ -47,7 +47,7 @@ const CarouselCompnent = () => {
             itemClass="image-item"
             responsive={responsive}
         >
-            {images.slice(0, 5).map(image => {
+            {images.slice.map(image => {
                 return (
                     <Image
                         draggable={false}
