@@ -33,7 +33,7 @@ function App() {
       <section className="showcase" id="home">
         <MainMint accounts={accounts} setAccounts={setAccounts} />
         <div className="content">
-          <img src="/logo.png" />
+          {/* <img src="/logo.png" /> */}
         </div>
       </section>
       {/* showcase section end */}
