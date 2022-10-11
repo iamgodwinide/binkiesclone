@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ba0765b3.css",
-    "main.js": "/static/js/main.76a6317f.js",
+    "main.js": "/static/js/main.6e63f925.js",
     "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
     "static/media/ATOMO DESXTTOP 2 (1).png": "/static/media/ATOMO DESXTTOP 2 (1).d1fad5b00de8797c5d52.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -26,10 +26,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.ba0765b3.css.map": "/static/css/main.ba0765b3.css.map",
-    "main.76a6317f.js.map": "/static/js/main.76a6317f.js.map"
+    "main.6e63f925.js.map": "/static/js/main.6e63f925.js.map"
   },
   "entrypoints": [
     "static/css/main.ba0765b3.css",
-    "static/js/main.76a6317f.js"
+    "static/js/main.6e63f925.js"
   ]
 }
