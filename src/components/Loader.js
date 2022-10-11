@@ -1,12 +1,35 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './loader.css'
 
 const Loader = ({ setIsOpended }) => {
+    const [imgClass, setimgClass] = useState("");
+    const videoplayer = useRef();
+
+
+    const handleClick = () => {
+        setimgClass("animate-up");
+        setTimeout(() => {
+            videoplayer.current.style.zIndex = 10;
+            videoplayer.current.play();
+        }, 2000)
+    }
+
+    const handleEnded = () => {
+        setIsOpended(true);
+    }
+
     return (
-        <div className="loader-bg">
+        <div className={"loader-bg"}>
+            <video className="video-bg" src='/stars.mp4' autoPlay muted />
+            <video onEnded={handleEnded} ref={videoplayer} className="video-bg-full" src='/Elevator elevated_3.mp4' preload='true' />
             <img
-                src="https://miro.medium.com/max/1400/1*e_Loq49BI4WmN7o9ItTADg.gif" />
-            <button onClick={() => setIsOpended(true)}>Click To Ascend</button>
+                className={imgClass}
+                src="/rocket.gif" />
+            <div className="platform" />
+            <button onClick={handleClick}>Ascend
+                <i className='fas fa-rocket' />
+            </button>
+
         </div>
 
     )

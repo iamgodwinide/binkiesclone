@@ -34,7 +34,7 @@
 
 @keyframes glowodd {
     from {
-        background-color: rgb(164, 241, 0);
+        background-color: rgb(241, 0, 0);
     }
 
     to {
@@ -48,7 +48,7 @@
     }
 
     to {
-        background-color: rgb(164, 241, 0);
+        background-color: rgb(241, 0, 0);
         ;
     }
 }

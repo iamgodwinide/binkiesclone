@@ -49,10 +49,10 @@ const MainMint = ({ accounts, setAccounts }) => {
                         <input className="form-control" type='number' value={mintAmount} />
                         <button className='btn btn-success' onClick={handleIncrement}>+</button>
                     </div>
-                    <button className='btn btn-primary' onClick={handleMint}>Mint Now</button>
+                    <button className='btn btn-primary mint' onClick={handleMint}>Mint Now</button>
                 </div>
             ) : (
-                <p className='mint-text'>Please Connect Metamask</p>
+                <p className='mint-text text-dark'>Please Connect Metamask</p>
             )
             }
         </div>

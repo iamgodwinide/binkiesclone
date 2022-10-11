@@ -1,10 +1,8 @@
 import React from "react";
-import { Flex, Image, Link } from '@chakra-ui/react';
 import Opensea from './assets/social-media-icons/Logomark-Blue.png';
 import Twitter from './assets/social-media-icons/twitter_32x32.png';
 import Etherscan from './assets/social-media-icons/etherscan-logo-circle.png';
 import './nav.css'
-import MainMint from "../MainMint";
 import { Button } from "reactstrap";
 
 const Navbar = ({ accounts, setAccounts }) => {
@@ -21,12 +19,9 @@ const Navbar = ({ accounts, setAccounts }) => {
     return (
         <nav>
             <div className='logo-wrap'>
-                <h4>ATA</h4>
+                <img src="/LOGO.png" />
             </div>
             <ul>
-
-                <MainMint accounts={accounts} setAccounts={setAccounts} />
-
                 {/*   Connect */}
                 {isConnected ? (
                     <p>Connected</p>

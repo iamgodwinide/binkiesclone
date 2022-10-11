@@ -14,45 +14,47 @@ const FAQ = () => {
     };
 
     return (
-        <section id='faq' className='acc-wrap'>
-            <h2>FAQ</h2>
-            <Accordion open={open} toggle={toggle}>
-                <AccordionItem className='item'>
-                    <AccordionHeader className='header' targetId="1">
-                        <h3>How many NFTs will there be?</h3>
-                    </AccordionHeader>
-                    <AccordionBody accordionId="1">
-                        <p>
-                            The Binkies collection will feature 10,000 hand-drawn NFTs generated from 250+ traits. Punk rockers, sparkle babies, bloodthirsty zombies – the whole fam.
-                        </p>
-                    </AccordionBody>
-                </AccordionItem>
-            </Accordion>
-            <Accordion open={open} toggle={toggle}>
-                <AccordionItem className='item'>
-                    <AccordionHeader className='header' targetId="2">
-                        <h3>How many NFTs will there be?</h3>
-                    </AccordionHeader>
-                    <AccordionBody accordionId="2">
-                        <p>
-                            The Binkies collection will feature 10,000 hand-drawn NFTs generated from 250+ traits. Punk rockers, sparkle babies, bloodthirsty zombies – the whole fam.
-                        </p>
-                    </AccordionBody>
-                </AccordionItem>
-            </Accordion>
-            <Accordion open={open} toggle={toggle}>
-                <AccordionItem className='item'>
-                    <AccordionHeader className='header' targetId="3">
-                        <h3>How many NFTs will there be?</h3>
-                    </AccordionHeader>
-                    <AccordionBody accordionId="3">
-                        <p>
-                            The Binkies collection will feature 10,000 hand-drawn NFTs generated from 250+ traits. Punk rockers, sparkle babies, bloodthirsty zombies – the whole fam.
-                        </p>
-                    </AccordionBody>
-                </AccordionItem>
-            </Accordion>
-        </section>
+        <div className='faq-wrap'>
+            <section id='faq' className='acc-wrap'>
+                <h2>FAQ's</h2>
+                <Accordion open={open} toggle={toggle}>
+                    <AccordionItem className='item'>
+                        <AccordionHeader className='header' targetId="1">
+                            <h3>What is atamo ascension?</h3>
+                        </AccordionHeader>
+                        <AccordionBody accordionId="1">
+                            <p>
+                                The Atamo Ascension is the journey of revolutionary sisters who must overcome two types of struggles – personal struggles and the environmental struggles of a decaying futuristic society – to reach a better life by climbing up the Ethereum Blockchain. Will they make it? Reader, find out.
+                            </p>
+                        </AccordionBody>
+                    </AccordionItem>
+                </Accordion>
+                <Accordion open={open} toggle={toggle}>
+                    <AccordionItem className='item'>
+                        <AccordionHeader className='header' targetId="2">
+                            <h3>How many nfts will there be?</h3>
+                        </AccordionHeader>
+                        <AccordionBody accordionId="2">
+                            <p>
+                                There will only be 2222 Atamo girls in existence
+                            </p>
+                        </AccordionBody>
+                    </AccordionItem>
+                </Accordion>
+                <Accordion open={open} toggle={toggle}>
+                    <AccordionItem className='item'>
+                        <AccordionHeader className='header' targetId="3">
+                            <h3>On which blockchain are the Atamo girls ascending?</h3>
+                        </AccordionHeader>
+                        <AccordionBody accordionId="3">
+                            <p>
+                                Ethereum blockchain
+                            </p>
+                        </AccordionBody>
+                    </AccordionItem>
+                </Accordion>
+            </section>
+        </div>
     )
 }
 

@@ -21,11 +21,14 @@ const responsive = {
     }
 };
 const images = [
-    "https://i.pinimg.com/736x/b3/b7/1c/b3b71caedde9b80297faf6a77d04be3f.jpg",
-    "https://preview.redd.it/oo2ns5ogw1h81.jpg?auto=webp&s=446f445d14a8967888baf39719c97eecd488e14f",
-    "https://i.pinimg.com/736x/98/64/74/986474493cc4ffac916d651659e1f6a7.jpg",
-    "https://nftevening.com/wp-content/uploads/2022/04/Project-PXN-NFT-collection.png.webp",
-    "https://pbs.twimg.com/media/FJ4VWvUaIAIWv3f.jpg:large",
+    "/atamo export fine 1.png",
+    "/atamo export fine 2.png",
+    "/atamo export fine 3.png",
+    "/atamo export fine 4.png",
+    "/atamo export fine 5.png",
+    "/atamo export fine 6.png",
+    "/atamo export fine 7.png",
+    "/atamo export fine 8.png",
 ];
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.

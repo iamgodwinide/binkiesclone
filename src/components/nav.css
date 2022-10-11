@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 14, 28);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     left: 0;
@@ -46,6 +46,12 @@ nav ul p {
     font-weight: bold;
     font-size: 1.7em !important;
     margin: 0 !important;
+}
+
+.logo-wrap img {
+    width: 6em !important;
+    height: 3em;
+
 }
 
 @media screen and (max-width: 1024px) {
