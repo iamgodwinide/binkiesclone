@@ -4,7 +4,7 @@ import newcontract from './Newcontract.json';
 import './mint.css'
 import { useAlert } from 'react-alert';
 
-const newcontractAddress = "0x8c21FA0FC22C03f6ACf6C75cC6dF625d9600688f";
+const newcontractAddress = "0x17cC48c7e5C2D76b371cC4FbB96C2F91470fEe41";
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
