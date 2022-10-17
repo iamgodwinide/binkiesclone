@@ -15,6 +15,7 @@ import ImageGrid from "./components/ImageGrid";
 import MainMint from "./MainMint";
 
 
+
 function App() {
   const [isOpened, setIsOpended] = useState(false);
   const [accounts, setAccounts] = useState([]);

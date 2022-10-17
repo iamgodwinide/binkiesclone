@@ -2,12 +2,15 @@ import { useState } from 'react';
 import { ethers, BigNumber } from 'ethers';
 import newcontract from './Newcontract.json';
 import './mint.css'
+import { useAlert } from 'react-alert';
 
-const newcontractAddress = "0xf8d31CB2a4d34b212E112aF3D0E88Ac08F3d4C82";
+const newcontractAddress = "0x8c21FA0FC22C03f6ACf6C75cC6dF625d9600688f";
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
+    const [freemintAmount] = useState(1);
     const isConnected = Boolean(accounts[0]);
+    const alert = useAlert();
 
     async function handleMint() {
         if (window.ethereum) {
@@ -20,16 +23,38 @@ const MainMint = ({ accounts, setAccounts }) => {
             );
             try {
                 const response = await contract.mint(BigNumber.from(mintAmount), {
-                    value: ethers.utils.parseEther((0.005 * mintAmount).toString()),
+                    value: ethers.utils.parseEther((0.005 * (mintAmount - 1)).toString())
                 });
                 console.log('response: ', response);
             } catch (err) {
+                alert.error(err?.reason);
                 console.log("error: ", err)
             };
         };
     };
 
-
+    async function handlefreeMint() {
+        if (window.ethereum) {
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+            const contract = new ethers.Contract(
+                newcontractAddress,
+                newcontract,
+                signer
+            );
+            try {
+                const value = ethers.utils.parseEther((0).toString())
+                console.log(value);
+                const response = await contract.mint(BigNumber.from(freemintAmount), {
+                    value
+                });
+                console.log('response: ', response);
+            } catch (err) {
+                alert.error(err?.reason);
+                console.log("error: ", err)
+            };
+        };
+    };
 
 
     const handleDecrement = () => {
@@ -37,9 +62,18 @@ const MainMint = ({ accounts, setAccounts }) => {
         setMintAmount(mintAmount - 1);
     };
     const handleIncrement = () => {
-        if (mintAmount >= 5) return;
+        if (mintAmount >= 10) return;
         setMintAmount(mintAmount + 1);
     };
+
+    const handleClick = () => {
+        if (mintAmount > 1) {
+            handleMint();
+        } else {
+            handlefreeMint();
+        }
+    }
+
     return (
         <div>
             {isConnected ? (
@@ -49,7 +83,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                         <input className="form-control" type='number' value={mintAmount} />
                         <button className='btn btn-success' onClick={handleIncrement}>+</button>
                     </div>
-                    <button className='btn btn-primary mint' onClick={handleMint}>Mint Now</button>
+                    <button className='btn btn-primary mint' onClick={handleClick}>{mintAmount === 1 ? "Mint Free Now" : "Mint Now"}</button>
                 </div>
             ) : (
                 <p className='mint-text text-dark'>Please Connect <p>Metamask!</p></p>
