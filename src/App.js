@@ -6,18 +6,16 @@ import './App.css'
 import Lights from "./components/Lights";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import ReactTyped from "react-typed";
 import { Parallax } from "react-parallax";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import { useState } from "react";
-import ImageGrid from "./components/ImageGrid";
 import MainMint from "./MainMint";
 
 
 
 function App() {
-  const [isOpened, setIsOpended] = useState(false);
+  const [isOpened, setIsOpended] = useState(true);
   const [accounts, setAccounts] = useState([]);
 
   return (

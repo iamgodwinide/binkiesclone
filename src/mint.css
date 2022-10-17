@@ -9,23 +9,45 @@ ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 0;
+    left: 7%;
     top: 50%;
+    width: 300px;
 }
+
 
 .mint-container button {
     margin: 0 .5em;
-    max-width: 10em;
 }
+
+.mint-container h1 {
+    font-family: Haettenschweiler !important;
+    font-size: 5em !important;
+    color: #000;
+}
+
+.mint-container h3 {
+    color: #000;
+    font-family: Haettenschweiler !important;
+}
+
 
 .mintwrap {
     display: flex;
     flex-direction: row;
     margin-bottom: 1em;
+    width: 100%;
 }
+
 
 .mint-container .mint {
     margin: 0 auto;
+    background-color: #000000;
+    color: #fff;
+    font-family: Haettenschweiler;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 96%;
 }
 
 .mint-text {
@@ -43,10 +65,23 @@ ul {
     border-radius: 10px;
 }
 
+
 .mint-text p {
     color: red;
 }
 
+.mintwrap .crementors {
+    background-color: #312B8F !important;
+    color: #fff;
+    width: 25%;
+}
+
+.mintwrap input {
+    width: 70%;
+    font-family: Haettenschweiler;
+    font-size: 2em;
+    text-align: center;
+}
 
 @media screen and (max-width: 1024px) {
 
