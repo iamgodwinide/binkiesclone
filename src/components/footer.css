@@ -20,10 +20,11 @@ footer img {
 
 .links {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    margin: 0 auto !important;
     list-style: none;
-    width: 12em;
+    width: 100%;
+    margin: 0 auto !important;
 }
 
 .links li {

@@ -36,7 +36,7 @@ const FAQ = () => {
                         </AccordionHeader>
                         <AccordionBody accordionId="2">
                             <p>
-                                There will only be 2222 Atamo girls in existence
+                                There will only be 5555 Atamo girls in existence
                             </p>
                         </AccordionBody>
                     </AccordionItem>
@@ -44,9 +44,21 @@ const FAQ = () => {
                 <Accordion open={open} toggle={toggle}>
                     <AccordionItem className='item'>
                         <AccordionHeader className='header' targetId="3">
-                            <h3>On which blockchain are the Atamo girls ascending?</h3>
+                            <h3>What is the mint price?</h3>
                         </AccordionHeader>
                         <AccordionBody accordionId="3">
+                            <p>
+                                One free or additional paid at 0.005 ETH
+                            </p>
+                        </AccordionBody>
+                    </AccordionItem>
+                </Accordion>
+                <Accordion open={open} toggle={toggle}>
+                    <AccordionItem className='item'>
+                        <AccordionHeader className='header' targetId="4">
+                            <h3>On which blockchain are the Atamo girls ascending?</h3>
+                        </AccordionHeader>
+                        <AccordionBody accordionId="4">
                             <p>
                                 Ethereum blockchain
                             </p>

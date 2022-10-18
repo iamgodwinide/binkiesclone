@@ -10,6 +10,7 @@ const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
     const [freemintAmount] = useState(1);
     const [totalSupply, settotalSupply] = useState("0");
+    const [maxSupply, setMaxSupply] = useState("0")
 
     const isConnected = Boolean(accounts[0]);
     const alert = useAlert();
@@ -77,11 +78,13 @@ const MainMint = ({ accounts, setAccounts }) => {
             );
             // call the tokenIds from the contract
             const _totalsupply = await contract.totalSupply();
+            const _maxsupply = await contract.maxSupply();
             //_tokenIds is a `Big Number`. We need to convert the Big Number to a string
             settotalSupply(_totalsupply.toString());
+            setMaxSupply(_maxsupply.toString());
             setTimeout(gettotalsupply, 5000)
         } catch (err) {
-            setTimeout(gettotalsupply, 5000)
+            setTimeout(gettotalsupply, 5000);
             console.error(err);
         }
     }
@@ -113,7 +116,7 @@ const MainMint = ({ accounts, setAccounts }) => {
         <div>
             {isConnected ? (
                 <div className='mint-container'>
-                    <h1>{totalSupply}</h1>
+                    <h1>{totalSupply}/{maxSupply}</h1>
                     <h3>Total supply</h3>
                     <div className="mintwrap">
                         <button className='btn crementors' onClick={handleDecrement}>-</button>

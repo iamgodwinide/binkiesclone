@@ -1,9 +1,7 @@
 import React from "react";
-import Opensea from './assets/social-media-icons/Logomark-Blue.png';
-import Twitter from './assets/social-media-icons/twitter_32x32.png';
-import Etherscan from './assets/social-media-icons/etherscan-logo-circle.png';
+import medium from './assets/social-media-icons/medium.svg';
+import ethersan from './assets/social-media-icons/etherscan-logo-circle.png';
 import './nav.css'
-import { Button } from "reactstrap";
 
 const Navbar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0]);
@@ -26,13 +24,23 @@ const Navbar = ({ accounts, setAccounts }) => {
                 {isConnected ? (
                     <p>Connected</p>
                 ) : (
-                    <Button color="primary" onClick={connectAccount}>Connect</Button>
+                    <button color="btn btn-primary" onClick={connectAccount}>Connect</button>
                 )
 
                 }
                 <li className="hide-mobile">
+                    <a href="#">
+                        <img src={ethersan} />
+                    </a>
+                </li>
+                <li className="hide-mobile">
+                    <a href="https://medium.com/@atamoascension/the-atamo-ascension-first-stop-98f52ae07f4e">
+                        <img src={medium} />
+                    </a>
+                </li>
+                <li className="hide-mobile">
                     <a href="https://opensea.io">
-                        <img src={Opensea} />
+                        <img src={"https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.svg"} />
                     </a>
                 </li>
                 <li className="hide-mobile">

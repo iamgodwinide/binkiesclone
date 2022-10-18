@@ -12,6 +12,23 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FB4A29;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+
 h1 {
   font-size: 7em !important;
   font-weight: 400 !important;

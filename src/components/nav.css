@@ -16,7 +16,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 35%;
 }
 
 nav ul a {
@@ -32,6 +32,16 @@ nav ul a img {
 
 nav ul p {
     margin: 0 !important;
+}
+
+nav ul button {
+    font-family: Haettenschweiler;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    padding: 0 .5em;
+    border-radius: 5px;
+    background-color: #1e70bf;
+    color: #fff;
 }
 
 .logo-wrap {
@@ -54,7 +64,7 @@ nav ul p {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 850px) {
     nav ul {
         width: 80%;
     }

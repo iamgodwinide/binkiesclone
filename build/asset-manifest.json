@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ff62b51.css",
-    "main.js": "/static/js/main.65b59aba.js",
+    "main.css": "/static/css/main.0fc909a7.css",
+    "main.js": "/static/js/main.5587ddbd.js",
+    "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
     "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
     "static/media/ATOMO DESXTTOP 2 (1).png": "/static/media/ATOMO DESXTTOP 2 (1).d1fad5b00de8797c5d52.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -25,11 +26,12 @@
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.0ff62b51.css.map": "/static/css/main.0ff62b51.css.map",
-    "main.65b59aba.js.map": "/static/js/main.65b59aba.js.map"
+    "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
+    "main.0fc909a7.css.map": "/static/css/main.0fc909a7.css.map",
+    "main.5587ddbd.js.map": "/static/js/main.5587ddbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff62b51.css",
-    "static/js/main.65b59aba.js"
+    "static/css/main.0fc909a7.css",
+    "static/js/main.5587ddbd.js"
   ]
 }

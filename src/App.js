@@ -9,22 +9,26 @@ import Footer from "./components/Footer";
 import { Parallax } from "react-parallax";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import MainMint from "./MainMint";
+import atamoSound from './components/assets/sound/Atamo.mp3';
 
 
 
 function App() {
   const [isOpened, setIsOpended] = useState(true);
   const [accounts, setAccounts] = useState([]);
+  const audio = useRef();
 
   return (
     <div id="app" className="App">
       {
-        !isOpened
+        isOpened
         &&
-        <Loader setIsOpended={setIsOpended} />
+        <Loader setIsOpended={setIsOpended} audio={audio} />
       }
+      {/* audio */}
+      <audio ref={audio} hidden src={atamoSound} preload="true" />
       {/* nav start */}
       <Navbar accounts={accounts} setAccounts={setAccounts} />
       {/* nav end */}
