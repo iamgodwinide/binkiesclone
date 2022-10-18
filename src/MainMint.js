@@ -28,7 +28,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                 const response = await contract.mint(BigNumber.from(mintAmount), {
                     value: ethers.utils.parseEther((0.005 * (mintAmount - 1)).toString())
                 });
-                alert.success(response);
+                alert.success("minted successfully");
                 console.log(response);
             } catch (err) {
                 alert.error(err?.reason);
@@ -48,12 +48,11 @@ const MainMint = ({ accounts, setAccounts }) => {
             );
             try {
                 const value = ethers.utils.parseEther((0).toString())
-                console.log(value);
                 const response = await contract.mint(BigNumber.from(freemintAmount), {
                     value
                 });
-                alert.success(response);
-                console.log(response);
+                alert.success("minted successfully");
+                console.log(response)
             } catch (err) {
                 alert.error(err?.reason);
                 console.log("error: ", err)
